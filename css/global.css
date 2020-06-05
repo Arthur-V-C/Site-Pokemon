@@ -1,0 +1,698 @@
+/*  RESET  */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+/*  SCROLL  */
+::-webkit-scrollbar {
+
+    width: 15px;
+    height: 0px;
+}
+
+::-webkit-scrollbar:hover{
+    width: 20px;
+    height: 0px;
+    transition: all 0.5s ease;
+}
+::-webkit-scrollbar-button{
+    display: none; }
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+textarea:focus, input:focus, select:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+body {
+    line-height: 1;
+    padding-left: 175px;
+}
+
+     /* FONTE IMPORTADA */
+@import url(
+    //db.onlinewebfonts.com/c/1f7cc3986271f87fcfbce4fadda6f2e5?family=FlexoW01-Thin);
+@font-face {
+    font-family: "FlexoW01-Thin"; 
+    src: url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.eot"); 
+    src: url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.woff") 
+    format("woff"), 
+    url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.svg#FlexoW01-Thin") format("svg"); }
+
+
+/*  ÍNICIO MENU  */
+    .menu{
+    border: none;
+    color:#fff;
+    background-attachment: fixed;
+    padding-left:175px ;
+    margin-left: -175px;
+    width: 270px;
+    height: 85px;
+    display: flex;
+}
+hr{
+    border: 2px solid rgb(133, 133, 133);
+    margin-top: 5px;
+    margin-left: -175px;
+    width: 1401px;
+}
+
+.pag{
+    width: 100px;
+    height: 20px;
+    background-color: #555;
+    text-decoration: none;
+    border: none;
+    padding-top: 55px;
+    padding-left: 30px;
+}
+
+/*  PÁGINA INICIAL  */
+.pag_in{
+    width: 120px;
+    padding-left: 10px;
+    background-color: #555;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    border-bottom: 10px solid rgb(133, 133, 133);
+}
+
+        /*  CASA  */
+.casa{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 25px;
+}
+
+.chamine{
+    width: 8px;
+    height: 15px;
+    margin-top: 6px;
+    margin-left: 9px;
+    background-color: rgb(133, 133, 133);
+    margin-bottom: -9px;
+    margin-left: 35px;
+}
+.triangulo{
+    width: 30px;
+    height: 30px;
+    margin-left: 13px;
+    transform: rotate(45deg);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+}
+.triangulo2{
+    width: 28px;
+    height: 28px;
+    margin-top: -25px;
+    margin-left: 14px;
+    transform: rotate(45deg);
+    background-color: rgba(85, 85, 85, 0);
+}
+.triangulo3{
+    width: 20px;
+    height: 20px;
+    margin-top: -25px;
+    margin-left: 18px;
+    transform: rotate(45deg);
+    background-color: rgb(133, 133, 133);
+    border-bottom-left-radius: 3px;
+}
+.corpo{
+    width: 27px;
+    height: 13px;
+    background-color: rgba(133, 133, 133, 0);
+    margin-top: -10px;
+    margin-left: 15px;
+    position: absolute;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.porta{
+    width: 6px;
+    height: 11px;
+    margin-top: 3px;
+    margin-left: 10px;
+    background-color: #555;
+    border-top-left-radius: 4px; 
+    border-top-right-radius: 4px; 
+}
+.div1{
+    position: absolute;
+    width: 120px;
+    font-style: normal;
+    color: #fff;
+    font-family: "FlexoW01-Thin";
+    margin-left: -5px;
+    margin-top: -2px;
+    font-size: 20px;
+}
+.pag_in:before{
+    content: '';
+    position: absolute;
+    background: #555;
+    height: 75px;
+    width: 130px;
+    transition: all 0.5s ease;
+    margin-left: -10px;
+    transform: translateY(-55px);
+}
+.pag_in:hover:before{
+    background: rgb(133, 133, 133);
+} 
+
+
+
+
+
+
+.corpo:before{
+    content: '';
+    position: absolute;
+    margin-top: -0px;
+    margin-left: -1px;
+    transition: all 0.5s ease;
+    width: 28px;
+    height: 13px;
+    background-color: rgb(133, 133, 133);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.pag_in:hover .corpo:before{
+    background: rgb(255, 255, 255);
+} 
+
+/*  ANIMAÇÃO DE PULO  */
+@keyframes caixa{
+    50%{
+        transform: translateY(-8px);
+    }
+}
+
+
+/*  ANIMAÇÃO DE COR  */
+.triangulo:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(133, 133, 133);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+.pag_in:hover .triangulo:before{
+    background: rgb(255, 255, 255);
+} 
+
+
+
+.triangulo2:before{
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease;
+    width: 28px;
+    height: 28px;
+    background-color: #555;
+}
+.pag_in:hover .triangulo2:before{
+    background-color: rgb(133, 133, 133);
+} 
+
+
+
+
+.triangulo3:before{
+    content: '';
+    position: absolute;
+
+    transition: all 0.5s ease;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(133, 133, 133);
+}
+.pag_in:hover .triangulo3:before{
+    background: rgb(255, 255, 255);
+} 
+
+.chamine:before{
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease;
+    width: 8px;
+    height: 15px;
+    background-color: rgb(133, 133, 133);
+}
+.pag_in:hover .chamine:before{
+    background: rgb(255, 255, 255);
+} 
+
+.porta:before{
+    content: '';
+    position: absolute;
+    transition: all 0.5s ease;
+    width: 8px;
+    height: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #555;
+    margin-left: -1px;
+}
+.pag_in:hover .porta:before{
+    background-color: rgb(133, 133, 133);
+} 
+
+
+
+.pag_in:hover .porta{
+    background-color: rgb(133, 133, 133);
+    transition: 0.5s;
+}
+
+
+.casa:hover .triangulo2{
+    animation: casa 0.3s  0s ease-out;
+}
+.casa:hover .triangulo{
+    animation: casa 0.3s  0s ease-out;
+}
+.casa:hover .chamine{
+
+    animation: casa1 0.3s  0s ease-out;
+}
+/*  ANIMAÇÃO DO ÍCONE CASA  */
+@keyframes casa{
+    50%{
+        transform: translateY(-10px) rotate(47deg);
+    }
+}
+@keyframes casa1{
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+
+/*  POKEDEX  */
+
+.pokedex{
+    border-bottom-right-radius: 8px;
+    border-bottom: 10px solid rgb(233, 40, 0);
+    margin-left: 10px;
+}
+/* ÍNICIO POKEBALL  */
+
+.pokeball{
+    position: absolute;
+    width: 36px;
+    height: 39px;
+    margin-top: -45px;
+    margin-left: 15px;
+}
+.pcima{
+    margin-bottom: 3px;
+    width: 36px;
+    height: 18px;
+    background-color: rgb(233, 40, 0);
+    border-top-right-radius: 5em;
+    border-top-left-radius: 5em;
+}
+.pmeio{
+
+    border: 3px solid #555;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(233, 40, 0);
+    border-radius: 5em;
+    margin-left: 9px;
+    margin-top: -28px;
+}
+.pbaixo{
+    margin-top: 3px;
+    width: 36px;
+    height: 18px;
+    background-color: rgb(233, 40, 0);
+    border-bottom-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
+
+
+.div2{
+    position: absolute;
+    width: 100px;
+    font-style: normal;
+    color: #fff;
+    font-family: "FlexoW01-Thin";
+    margin-left: -5px;
+    margin-top: -2px;
+    font-size: 20px;
+}
+
+.pokedex:before{
+    content: '';
+    position: absolute;
+    background: #555;
+    height: 75px;
+    width: 130px;
+    transition: all 0.5s ease;
+    margin-left: -30px;
+    transform: translateY(-55px);
+}
+.pokedex:hover:before{
+    background: rgb(233, 40, 0);
+} 
+
+
+
+
+
+/*  ANIMAÇÃO DE COR  */
+.pcima:before{
+    content: '';
+    position: absolute;
+    margin-bottom: 3px;
+
+    width: 36px;
+    height: 18px;
+    background-color: rgba(233, 27, 0, 0);
+    border-top-right-radius: 5em;
+    border-top-left-radius: 5em;
+    transition: all 0.5s ease;
+
+}
+.pokedex:hover .pcima:before{
+    background-color: #fff;
+} 
+
+
+
+
+.pmeio::before{
+    content: '';
+    position: absolute;
+    border: 3px solid #555;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(233, 40, 0);
+    border-radius: 5em;
+    margin-left: -3px;
+    margin-top: -3px;
+    transition: all 0.5s ease;
+}
+
+.pokedex:hover .pmeio:before{
+    background-color: #fff;
+    border: 3px solid rgb(233, 40, 0);
+    transition: 0.5s;
+
+}
+
+
+
+
+.pbaixo:before{
+    content: '';
+    position: absolute;
+
+
+    width: 36px;
+    height: 18px;
+    background-color: rgba(233, 27, 0, 0);
+    border-bottom-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+    transition: all 0.5s ease;
+
+}
+.pokedex:hover .pbaixo:before{
+    background-color: #fff;
+} 
+.pokeball:hover .pmeio{
+    animation: pmeio 1s 0s ease;
+}
+
+.pokeball:hover{
+    animation: pokeball 1s  0s ease-out;    
+    
+}
+/*  ANIMAÇÃO DO CENTRO DO ÍCONE POKEBOLA  */
+@keyframes pmeio{
+    0%{
+
+    }
+    
+    100%{
+        transform:translateY(-1px);
+    }
+}
+  
+
+/*  ANIMAÇÃO DA POKEBOLA  */
+@keyframes pokeball{
+    0%{
+
+    }
+    20%{
+        transform: translateY(-10px) rotate(90deg);
+    }
+
+    35%{
+        transform:  translateY(8px) rotate(135deg);
+    }
+    40%{
+        transform:  translateY(8px) rotate(135deg);
+    }
+    60%{
+    transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+a{
+    width: 130px;
+    height: 85px;
+}
+
+
+
+/* FIM MENU  */
+
+/*  RODAPÉ  */
+
+.rodape{
+    width: 1174px;
+    height: 250px;
+    background-color: rgb(31, 31, 31);
+    margin-top: 100px;
+    color: #fff;
+    padding-left: 175px;
+    margin-left: -175px;
+    display: flex;
+    padding-top: 35px;
+    margin-top: 100px;
+}
+
+/*  PARTE ESQUERDA DO RODAPÉ  */
+
+.tpc{
+    border-right: 2px solid black;
+    width: 330px;
+    height: 220px;
+
+}
+.itpc{
+    width: 300px;
+    height: 40px;
+
+}
+.tpc label{
+    display: block;
+    margin-top: -10px;
+    margin-left: 10px;
+    color: #616161;    
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    
+    font-weight: bold;
+}
+.tpc label:hover {
+    color: #fff;
+}
+.ltpc:hover .seta{
+    display: flex;
+    width: 100px;
+    height: 0px;
+    border: 5px solid;
+    border-color: rgba(255, 0, 0, 0) rgba(0, 0, 255, 0) rgba(255, 255, 0, 0)  #ffffff; 
+}
+
+.seta{
+    display: flex;
+    width: 100px;
+    height: 0px;
+    border: 5px solid;
+    border-color: rgba(255, 0, 0, 0) rgba(0, 0, 255, 0) rgba(255, 255, 0, 0)  #616161; 
+}
+
+.ltpc{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+/*  PARTE DO CENTRO DO RODAPÉ  */
+
+.icones{
+    border-right: 2px solid black;
+    width: 340px ;
+    height: 220px;
+    display: flex;
+    padding-top: 10px;
+}
+.face{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.face2{
+    background: #fff;
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    border-radius:8px ;
+    margin-left: 50px;
+    
+}
+.yt{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 100px;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.tw{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 150px;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.insta{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: 200px;
+    border-radius:5px ;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*  PARTE DA DIREITA DO RODAPÉ  */
+
+.bbc{
+
+    width: 340px ;
+    height: 220px;
+    display: flex;
+}
+.ibbc{
+    width: 150px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 80px;
+    font-size: 15px;
+    cursor: pointer;
+
+}    
+.bbc label{
+    font-family: "Roboto",sans-serif;
+    color: #616161;    
+    font-size: 12px;
+    margin-top: 210px;
+    margin-left: -270px;
+}
+.a{
+    font-family: "Roboto",sans-serif;
+    color: #616161;    
+    font-size: 12px;
+    margin-top: 70px;
+    margin-left: 15px;
+
+}
+.a2{
+    width: 100px;
+    font-family: "Roboto",sans-serif;
+    color: #616161;    
+    font-size: 12px;
+    margin-top: 95px;
+    margin-left: -130px;
+}
+.a3{
+    font-family: "Roboto",sans-serif;
+    color: #616161;
+    width: 70px;    
+    font-size: 12px;
+    margin-top: 130px;
+    margin-left: -100px;
+}
+.a4{
+    font-family: "Roboto",sans-serif;
+    color: #616161;    
+    width: 100px;
+    font-size: 12px;
+    margin-top: 165px;
+    margin-left: -70px;
+}

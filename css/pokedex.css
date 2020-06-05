@@ -1,0 +1,249 @@
+
+/*  CAIXA DO POKEMON  */
+.painel{
+    width: 1092px;
+    margin-left: -10px;
+    margin-top: 50px;
+}
+/*  INFORMAÇÕES DOS POKEMON  */
+.pokemon{
+    width: 220px;
+    height: 320px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    padding-left: 30px;
+}
+.pokemon:hover{
+    animation: caixa 0.2s 0s linear;
+}
+.number{
+    font-family: "FlexoW01-Thin"; 
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(110, 110, 110);
+
+}
+.imgp{
+    width: 220px;
+    width: 220px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    margin-left: -15px;
+}
+.elemento{
+    width: 180px;
+    height: 23px;
+}
+.nome{
+    width: 200px;
+    height: 30px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 23px;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: #000;
+}
+/*  ELEMENTOS  */
+
+.fogo{
+    background-color: #fd7d24;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    border-radius: 5px;
+    width: 58px;
+    height: 18px;
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-flex;
+}
+.grama{
+    background-color: #9bcc50;
+    width: 63px;
+    height: 18px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.agua{
+    background-color: #4592c4;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    border-radius: 5px;
+    width: 58px;
+    height: 18px;
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-flex;
+}
+.pedra{
+    background-color: #a38c21;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.terrestre{
+    background: 
+    linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.veneno{
+    background-color: #b97fc9;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 64px;
+    height: 18px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.voador{
+    background: 
+    linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    font-family: "FlexoW01-Thin"; 
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 62px;
+    height: 18px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+.inseto{
+    background-color: #729f3f;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 60px;
+    height: 18px;
+    padding-left: 14px;
+    padding-top: 5px;
+}
+.dragão{
+    background: 
+    linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.dark{
+    background-color: #707070;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.eletrico{
+    background-color: #eed535;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 64px;
+    height: 18px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.lutador{
+    background-color: #d56723;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.fantasma{
+    background-color: #7b62a3;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.fada{
+    background-color: #fdb9e9;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.normal{
+    background-color: #a4acaf;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 62px;
+    height: 18px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+.aco{
+    background-color: #9eb7b8;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.gelo{
+    background-color: #51c4e7;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+.psiquico{
+    background-color: #f366b9;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+}
+a:active{
+    color: rgb(0, 0, 0);
+}
+a{
+    width: 220px;
+    height: 320px;
+    color: #fff;
+}

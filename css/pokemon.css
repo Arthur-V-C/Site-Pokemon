@@ -1,0 +1,592 @@
+/*  FONTE IMPORTADA  */
+
+@import url(//db.onlinewebfonts.com/c/d2d21cf0ee4c1d969d8a4dccc587ab26?family=Flexo+Medium);
+@font-face {
+    font-family: "Flexo Medium"; 
+    src: url("//db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot"); 
+    src: url("//db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff") 
+    format("woff"), 
+    url("//db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo Medium") 
+    format("svg"); }
+    
+
+    /*  BARRAS DO PRÓXIMO/ANTERIOR POKEMON  */
+.bar{
+    margin-left: -175px;
+    margin-top: 75px;
+    width: 476px;
+    height: 55px;    
+    padding-top: 20px;
+    padding-left: 250px;
+
+
+
+}
+.bar:hover{
+    cursor: default;
+}
+.bar1{
+
+    margin-left: -225px;
+    margin-top: 75px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 476px;
+    height: 55px;    
+    padding-top: 20px;
+    padding-left: 250px;
+    background-color:rgb(182, 182, 182);
+    display:flex;
+    font-family: "Flexo Medium"; 
+    font-size: 25px;
+    font-weight: 600;
+    color: #6b6b6b;
+
+}
+
+.bar1:before{
+    content: "";
+    position: absolute;
+    width: 725px;
+    height: 75px;    
+    background-color:rgb(182, 182, 182);
+    margin-top: -20px;
+    margin-left: -250px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: "Flexo Medium"; 
+    font-size: 25px;
+    font-weight: 600;
+    color: #6b6b6b;
+    transition: all 1s ease;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.bar1:hover:before{
+    background-color:rgb(0, 119, 255) ;
+}
+.bar1:hover .N1{
+    color: #fff;
+    transition: all 1s ease;
+}
+.bar2{
+    height: 55px;    
+    padding-top: 20px;
+    padding-left: 250px;
+    background-color:rg
+    b(182, 182, 182);
+    display:flex;
+    margin-top: -75px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: "Flexo Medium"; 
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 570px;
+    color: #6b6b6b;
+}
+.bar2:before{
+    content: "";
+    position: absolute;
+    width: 681px;
+    height: 75px;    
+    background-color:rgb(182, 182, 182);
+    margin-top: -20px;
+    margin-left: -300px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: "Flexo Medium"; 
+    font-size: 25px;
+    font-weight: 600;
+    color: #6b6b6b;
+    transition: all 1s ease;
+}
+.bar2:hover:before{
+    background-color:rgb(0, 119, 255) ;
+}
+.bar2:hover .N3{
+    color: #fff;
+    transition: all 1s ease;
+}
+.sn1{
+    margin-left: 0px;
+}
+.N1{
+    position: absolute;
+
+}
+.sn2{
+    margin-left: 100px;
+}
+.N2{
+
+    color: #fff;
+    position: absolute;
+
+}
+.sn3{
+    margin-left: -100px;
+}
+.N3{
+
+    position: absolute;
+    display: inline-flex;
+}
+.sn4{
+    margin-left: 50px;
+}
+.N4{
+    color: #fff;
+    position: absolute;
+    display: inline-flex;
+    margin-left: 120px;
+}
+
+  /*  NOME E NÚMERO DO POKEMON  */
+.name{
+    width: 400px;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+.nome{
+    font-family: "Flexo Medium"; 
+    font-size: 40px;
+    color: #212121;
+    display: inline-flex;
+}
+.number{
+    font-family: "Flexo Medium"; 
+    font-size: 40px;
+    color: #6b6b6b;
+    display: inline-flex;
+    margin-left:20px ;
+}
+
+  /*  INFORMAÇÕES ADICIONAIS  */
+.painel{
+    width: 1050px;
+    height: 765px;
+    margin-top: 30px;
+    margin-left: -30px;
+}
+.img{
+    width: 500px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    display: flex;
+}
+.texto{
+    width: 500px;
+    height: 180px;
+    margin-top: -495px;
+    margin-left: 520px;
+    font-size: 20px;
+    font-family: "Flexo Medium";
+}
+.texto p{
+    margin-top: 3px;
+    display: block;
+}
+
+
+/*  DADOS  */
+.dados{
+    width: 450px;
+    height: 274px;
+    background-color:rgb(90, 166, 253);
+    margin-left: 520px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 10px;    
+    font-size: 25px;
+    font-family: "FlexoW01-Thin";    
+    color: #fff;
+}
+
+
+
+
+/*  ALTURA  */
+.altura{
+    height: 66px;
+    width: 150px;
+    display: flex;
+}
+
+.descricao1{
+    margin-top: 35px;
+    margin-left: -60px;
+    font-family: "Flexo Medium";
+    color: #000;
+    display: flex;
+}
+
+
+
+
+
+/*  PESO  */
+.peso{
+    height: 66px;
+    width: 150px;
+    display: flex;
+    margin-top: 28px;
+}
+.descricao2{
+    margin-top: 35px;
+    margin-left: -50px;
+    font-family: "Flexo Medium";
+    color: #000;
+    display: flex;
+}
+
+
+
+
+/*  GÊNERO  */
+.genero{
+    height: 66px;
+    width: 150px;
+    display: flex;
+    margin-top: 28px;
+}
+.masculino{
+    width: 35px;
+    height: 35px;
+    margin-top: 35px;
+    margin-left: -75px;
+    display: flex;
+}
+.feminino{
+    width: 35px;
+    height: 35px;
+    margin-top: 35px;
+    display: flex;
+}
+
+
+/*  CATEGORIA  */
+.categoria{
+    height: 66px;
+    width: 150px;
+    display: flex;
+    margin-top: -203px;
+    margin-left: 250px;
+
+}
+.descricao3{
+    margin-top: 55px;
+    margin-left: -65px;
+    font-family: "Flexo Medium";
+    color: #000;
+    display: flex;
+}
+.descricao4{
+    margin-top: 35px;
+    margin-left: -95px;
+    font-family: "Flexo Medium";
+    color: #000;
+    display: flex;
+}
+
+
+
+/*  HABILIDADES  */
+.habilidades{
+    height: 66px;
+    width: 150px;
+    display: flex;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+.descricao5{
+    margin-top: 35px;
+    margin-left: -115px;
+    font-family: "Flexo Medium";
+    color: #000;
+    display: flex;
+}
+
+
+/*  ELEMENTO  */
+.elemento1{
+    margin-top: 20px;
+    width: 320px;
+    height: 90px;
+}
+.tipo{
+    font-family: "Flexo Medium";
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*  PRIMEIRA LINHA DE DESVANTAGEM  */
+.elemento2{
+    margin-top: 50px;
+    width: 480px;
+    height: 90px;
+}
+.fraqueza{
+    font-family: "Flexo Medium";
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*  SEGUNDA LINHA DE DESVANTAGEM  */
+.elemento3{
+    margin-top: 5px;
+    width: 480px;
+    height: 35px;
+}
+
+
+
+
+
+/*  ELEMENTOS  */
+.fogo{
+    background-color: #fd7d24;
+    width: 110px;
+    height: 30px;
+    padding-left: 46px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.grama{
+    background-color: #9bcc50;
+    width: 120px;
+    height: 30px;
+    padding-left: 36px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.agua{
+    background-color: #4592c4;
+    width: 110px;
+    height: 30px;
+    padding-left: 46px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.pedra{
+    background-color: #a38c21;
+    width: 115px;
+    height: 30px;
+    padding-left: 41px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.terrestre{
+    background: 
+    linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    width: 130px;
+    height: 30px;
+    padding-left: 26px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.veneno{
+    background-color: #b97fc9;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 123px;
+    height: 30px;
+    padding-left: 33px;
+    padding-top: 5px;
+    display: inline-flex;
+}
+.voador{
+    background: 
+    linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    width: 120px;
+    height: 30px;
+    padding-left: 36px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.inseto{
+    background-color: #729f3f;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 118px;
+    height: 30px;
+    padding-left: 38px;
+    padding-top: 5px;
+    display: inline-flex;
+}
+.dragão{
+    background: 
+    linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+    display: inline-flex;
+}
+.dark{
+    background-color: #707070;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+    display: inline-flex;
+}
+.eletrico{
+    background-color: #eed535;
+    width: 120px;
+    height: 30px;
+    padding-left: 36px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.lutador{
+    background-color: #d56723;
+    width: 120px;
+    height: 30px;
+    padding-left: 36px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.fantasma{
+    background-color: #7b62a3;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+    display: inline-flex;
+}
+.fada{
+    background-color: #fdb9e9;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+    display: inline-flex;
+}
+.normal{
+    background-color: #a4acaf;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    display: inline-flex;
+    color: #fff;
+    width: 123px;
+    height: 30px;
+    padding-left: 33px;
+    padding-top: 5px;
+    display: inline-flex;
+}
+.aco{
+    background-color: #9eb7b8;
+    width: 73px;
+    height: 18px;
+    margin-right: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 11px;
+    border-radius: 5px;
+    display: inline-flex;
+}
+.gelo{
+    background-color: #51c4e7;
+    width: 104px;
+    height: 30px;
+    padding-left: 50px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+.psiquico{
+    background-color: #f366b9;
+    width: 120px;
+    height: 30px;
+    padding-left: 36px;
+    padding-top: 5px;
+    font-family: "FlexoW01-Thin"; 
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+}
+/*  BOTÃO EXPLORAR MAIS POKEMON  */
+.pokedex2{
+    width: 220px;
+    height: 35px;
+    padding: 15px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    background-color:#ee6b2f;
+    margin-left: 750px;
+    font-family: "Flexo Medium";
+    font-size: 20px;
+    color: #fff;
+
+}
+/*  LINK PARA A PÁGINA DO POKEMON  */
+.a1{
+    text-decoration: none;
+}
+.a1:hover{
+    cursor: default;
+}
+a{
+    width: 0px;
+    height: 75px;    
+}
